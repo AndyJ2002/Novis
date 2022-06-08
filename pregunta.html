@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Ques</title>
+    <style>
+        body {
+            background-image: url(https://www.buscarparejainternet.com/wp-content/uploads/2016/10/frases-de-amor.jpg);
+            background-size: cover;
+        }
+
+        div {
+            text-align: center;
+            
+        }
+       h1 {
+          font-style: italic; 
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+       }
+    </style>
+    <script>
+        function porSiAcepta() {
+            alert("OK mm ¿vamos por una pizza?👉👈");
+            
+        }
+        function mueveElBoton() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>¿QUIERES SALIR CONMIGO?❤️</h1>
+        <INput type="button" onclick="porSiAcepta()" id="btnSi" value="SI🥰" style="width: 150px;height:90px;background-color: rgb(14, 86, 168);border-radius: 6px;
+            border: 2px solid #2436c2;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></INput>
+        <INput type="button" tabindex="-1" id="btnNo" onmouseover="mueveElBoton()" value="NO&#128532" style="width:150px;height:90px; background-color: rgb(175, 47, 15);border-radius: 6px;
+            border: 2px solid #6f00b0;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></INput>
+
+    </div>
+</body>
+
+</html>
